@@ -34,7 +34,35 @@
         </div>
 
         <div class="input-box">
-          <input type="password" placeholder="Senha" class="password" />
+          <input
+            ngModel
+            #formPassword="ngModel"
+            required
+            name="password"
+            type="password"
+            placeholder="Senha"
+            class="password"
+            minlength="8"
+          />
+          <div
+            *ngIf="
+              formPassword.invalid &&
+              (formPassword.dirty || formPassword.touched)
+            "
+            class="alert alert-danger"
+          >
+            Senha inválida.
+            <div *ngIf="formPassword.errors?.['required']">
+              Senha obrigatória.
+            </div>
+
+            <div
+              *ngIf="formPassword.errors?.['minlength']"
+              class="alert alert-danger"
+            >
+              Mínimo 8 caracteres.
+            </div>
+          </div>
         </div>
         <button type="submit" [disabled]="formEmail.invalid">Entrar</button>
       </form>
