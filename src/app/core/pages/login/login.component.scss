@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-login {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.img-box {
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.content-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.content-box .form-box {
+  width: 50%;
+}
+
+.content-box .form-box .ul .img-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-box .form-box .img-logo li {
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 7px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-box .form-box .input-box {
+  margin-bottom: 20px;
+}
+
+.content-box .form-box .input-box input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  font-weight: 400;
+  border: 1px solid #000000;
+  font-size: 17px;
+  color: #32324f;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.email {
+  background-image: url('/assets/icone-usuario.png');
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+
+.password {
+  background-image: url('/assets/icone-cadeado.png');
+  background-repeat: no-repeat;
+  background-position: 10px;
+}
+
+.content-box .form-box .input-box input::placeholder {
+  padding-left: 3rem;
+}
+
+.content-box .form-box .input-box input[type=submit] {
+  background: #4CBC9A;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.content-box .form-box .input-box input[type=submit]:hover {
+  background: #4bae90;
+}
+
+.content-box .form-box h3 {
+  color: #607d8b;
+  text-decoration: none;
+  margin: 7px 0 15px;
+  font-weight: 500;
+  text-align: center;
+  font-size: 22px;
+}
+
+@media (max-width:868px) {
+  .container-login .img-box {
+    display: none;
+  }
+
+  .container-login .content-box {
+    width: 100%;
+  }
+
+  .container-login .content-box .form-box {
+    width: 100%;
+    padding: 40px;
+    background: white;
+    margin: 50px;
+  }
+
+  .container-login .content-box .form-box h3 {
+    margin: 30px 0 10px;
+  }
+}
+
+@media (max-width:450px) {
+  .container-login .content-box .form-box {
+    flex-wrap: wrap;
+  }
+
+  .container-login .content-box .form-box {
+    margin-top: 20px;
+  }
+}
