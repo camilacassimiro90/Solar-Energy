@@ -13,8 +13,8 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  logar(email: string) {
-    console.log('Post efetuado!', email);
+  logar(dados: { email: string, password: string }) {
+    console.log('Post efetuado!', dados);
 
   }
 }
