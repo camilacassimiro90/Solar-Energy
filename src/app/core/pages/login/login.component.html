@@ -7,21 +7,36 @@
     <div class="form-box">
       <div class="rounded mx-auto d-block">
         <div class="logo">
-          <img src="../assets/logo.png"/></div>
+          <img src="../assets/logo.png" />
+        </div>
       </div>
       <h3>Seja bem vindo (a)</h3>
-      <form>
+      <form (ngSubmit)="logar(formEmail.value)">
         <div class="input-box">
-          <input type="email" placeholder="Email" class="email" />
+          <input
+            ngModel
+            #formEmail="ngModel"
+            required
+            name="email"
+            type="email"
+            placeholder="Email"
+            class="email"
+            [email]="true"
+          />
+
+          <div
+            *ngIf="formEmail.invalid && (formEmail.dirty || formEmail.touched)"
+            class="alert alert-danger"
+          >
+            Email inválido.
+            <div *ngIf="formEmail.errors?.['required']">Email obrigatório.</div>
+          </div>
         </div>
 
         <div class="input-box">
           <input type="password" placeholder="Senha" class="password" />
         </div>
-
-        <div class="input-box">
-          <input type="submit" value="Entrar" />
-        </div>
+        <button type="submit" [disabled]="formEmail.invalid">Entrar</button>
       </form>
     </div>
   </div>
