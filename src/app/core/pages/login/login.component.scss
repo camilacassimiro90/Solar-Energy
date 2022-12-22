@@ -12,6 +12,8 @@
   display: flex;
 }
 
+// Lado esquerdo
+
 .img-box {
   width: 50%;
   height: 100%;
@@ -24,6 +26,7 @@
   height: 100%;
 }
 
+// Lado direito
 .content-box {
   display: flex;
   justify-content: center;
@@ -77,6 +80,8 @@
   border-radius: 5px;
 }
 
+// Icones no input
+
 .email {
   background-image: url('/assets/icone-usuario.png');
   background-repeat: no-repeat;
@@ -93,19 +98,22 @@
   padding-left: 3rem;
 }
 
-.content-box .form-box .input-box input[type=submit] {
+button {
   background: #4CBC9A;
   color: #fff;
   outline: none;
   border: none;
+  width: 100%;
+  padding: 10px;
   font-weight: 500;
+  border-radius: 10px;
   cursor: pointer;
   font-size: 20px;
   transition: 0.3s;
 }
 
-.content-box .form-box .input-box input[type=submit]:hover {
-  background: #4bae90;
+button:disabled {
+  background-color: #ddd;
 }
 
 .content-box .form-box h3 {
@@ -116,6 +124,18 @@
   text-align: center;
   font-size: 22px;
 }
+
+// Validações
+
+.alert-danger {
+  color: #a94442;
+  background-color: #f2dede;
+  border-color: #ebccd1;
+  margin-top: 1px;
+}
+
+
+// Responsividade
 
 @media (max-width:868px) {
   .container-login .img-box {
