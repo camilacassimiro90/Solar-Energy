@@ -3,7 +3,6 @@
 
 <h3>:hammer: Projeto em desenvolvimento :hammer: </h3>
 
-
 <p>:white_check_mark: Uma Tela de Login contendo um formulário com campos de email e senha. Os campos
 de email e senha são obrigatórios (Utilize o ngModel para vincular os inputs do formulário).
 Ao clicar no botão de Entrar deve passar pela validação.</p>
@@ -23,9 +22,36 @@ https://user-images.githubusercontent.com/79873793/209144648-043c8400-d5f7-4de2-
    <li>Typescript</li>
 </ul>
 
-<h2>:woman_technologist:Autora</h2>
-<h3>Camila Cassimiro</h3>
-  
+<h2>:woman_technologist:Autoras</h2>
+
+<table>
+  <tbody>
+   <tr>
+    <td align="center">
+        <a href="https://github.com/camilacassimiro90">
+          <img src="https://github.com/camilacassimiro90.png" width="100px;" alt="Camila Cassimiro's github avatar"/>
+            <br />
+          <sub><b>Camila Cassimiro</b></sub>
+        </a>
+      </td>
+    <td align="center">
+        <a href="https://github.com/Elianehenri">
+          <img src="https://github.com/Elianehenri.png" width="100px;" alt="Elianehenri's github avatar"/>
+            <br />
+          <sub><b>Eliane Henriqueta</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/hibrunasimoes">
+          <img src="https://github.com/hibrunasimoes.png" width="100px;" alt="Bruna Simoes's github avatar"/>
+            <br />
+          <sub><b>Bruna Simões</b></sub>
+        </a>
+      </td>
+   </tr>
+  </tbody>
+</table>
+
 
 <h2>Instruções de como rodar o projeto:</h2>
 
@@ -39,6 +65,7 @@ $ git clone https://github.com/camilacassimiro90/Solar-Energy.git
 ```
 
 ### Você precisará:
+
 <ul>
     <li>Node JS (obrigatório)</li>
     <li>Visual Studio Code (recomendado)</li>
@@ -46,10 +73,8 @@ $ git clone https://github.com/camilacassimiro90/Solar-Energy.git
     <li>Angular CLI</li>
 </ul>
 
-
-#Abrir o  terminal e  executar o comando:
+#Abrir o terminal e executar o comando:
 $ ng serve -o
-
 
 <h3>:coffee: :computer: O que falta implementar:</h3>
 
@@ -72,7 +97,6 @@ $ ng serve -o
 
 <li>Implementar tela de Lançamento de geração mensal contendo um formulário com um <Select/> (listando como opção as unidades já cadastradas consumindo do json-serve e listando com o ngFor), um campo de data e um campo de total kw gerado (aceita somente números). Ao clicar em salvar, chamar evento de clique (click) e cadastre valores via POST</li>
 </ul>
-
 
 # SolarEnergy
 
