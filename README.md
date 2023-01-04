@@ -98,6 +98,8 @@ $ ng serve -o
 <li>Implementar tela de Lançamento de geração mensal contendo um formulário com um <Select/> (listando como opção as unidades já cadastradas consumindo do json-serve e listando com o ngFor), um campo de data e um campo de total kw gerado (aceita somente números). Ao clicar em salvar, chamar evento de clique (click) e cadastre valores via POST</li>
 </ul>
 
+<br>
+
 # SolarEnergy
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
