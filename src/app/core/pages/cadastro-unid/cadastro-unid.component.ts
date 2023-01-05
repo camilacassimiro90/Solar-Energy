@@ -1,12 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { IList } from '../../services/unidades';
+import { IList } from 'src/app/core/shared/services/unidades';
 
 @Component({
-  selector: 'app-cadastro-unidades',
-  templateUrl: './cadastro-unidades.component.html',
-  styleUrls: ['./cadastro-unidades.component.css']
+  selector: 'app-cadastro-unid',
+  templateUrl: './cadastro-unid.component.html',
+  styleUrls: ['./cadastro-unid.component.css']
 })
-export class CadastroUnidadesComponent implements OnInit {
+export class CadastroUnidComponent implements OnInit {
 
   cadastro:boolean = false
 
@@ -18,14 +18,11 @@ export class CadastroUnidadesComponent implements OnInit {
     modelo: "",
     isActive: false
   };
-
   constructor() { }
 
   ngOnInit(): void {
   }
-
   cadastrar(){
     this.cadastro = true;
   }
-
 }
