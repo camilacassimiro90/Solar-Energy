@@ -6,8 +6,11 @@
 <p>:white_check_mark: Uma Tela de Login contendo um formulário com campos de email e senha. Os campos
 de email e senha são obrigatórios (Utilize o ngModel para vincular os inputs do formulário).
 Ao clicar no botão de Entrar deve passar pela validação.</p>
-
 <p>:star: Adicional de responsividade. </p>
+
+<p>:white_check_mark: Um menu lateral, contendo as opções Dashboard, Unidade Consumidora e Cadastro de energia gerada. O menu deve ser configurado usando Angular Router. Seguir layout conforme o mockup disponibilizado.</p>
+
+
 
 <h3>Seguir layout conforme o mockup disponibilizado: :arrow_down: https://www.figma.com/file/Bh4fJZohrlLMoKQU6lbe9p/Projeto-DevInHouse---NDD?node-id=0%3A1&t=tyunHBjZHVmJkEYv-0</h3>
 
@@ -80,8 +83,6 @@ $ ng serve -o
 
 <ul>
 <li>Ao clicar no botão de Entrar e passar pela validação, redirecionar para tela de Dashboard. Seguir layout conforme o mockup disponibilizado.</li>
-
-<li>	Um menu lateral, contendo as opções Dashboard, Unidade Consumidora e Cadastro de energia gerada. O menu deve ser configurado usando Angular Router. Seguir layout conforme o mockup disponibilizado.</li>
 
 <li>Uma tela de Dashboard contendo 4 cards: Total de unidades (Exibir o total de unidades cadastradas no json-server) , unidades ativas (Exibir total de unidades com status ativo(true) , unidades inativas (Exibir total de unidades com status inativo(false)  e média de energia (Soma de todos os total / total de unidades).</li>
 
