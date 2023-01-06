@@ -6,6 +6,8 @@ import { LoginComponent } from './core/pages/login/login.component';
 
 import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+
+import { MenuLateralComponent } from './core/pages/menu-lateral/menu-lateral.component';
 import { CadastroUnidComponent } from './core/pages/cadastro-unid/cadastro-unid.component';
 
 const appRoutes: Routes = [
@@ -17,8 +19,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     LoginComponent,
+    MenuLateralComponent,
     CadastroUnidComponent,
-
   ],
   imports: [
     BrowserModule,
