@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
 
 import { MenuLateralComponent } from './core/pages/menu-lateral/menu-lateral.component';
 import { CadastroUnidComponent } from './core/pages/cadastro-unid/cadastro-unid.component';
-import { ListarUnidadeComponent } from './core/pages/listar-unidade/listar-unidade/listar-unidade.component';
+import { ListarUnidadeComponent } from './core/pages/listar-unidade/listar-unidade.component';
 import { UnidadesService } from './core/shared/services/unidades.service';
 
 const appRoutes: Routes = [
