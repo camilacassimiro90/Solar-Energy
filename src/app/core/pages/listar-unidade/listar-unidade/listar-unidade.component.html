@@ -1,0 +1,39 @@
+<div class="principal">
+  <app-menu-lateral> </app-menu-lateral>
+<div class="content">
+  <div class="container title">
+      <h1>Unidades</h1>
+  </div>
+  <div class="container">
+      <h2>Lista de unidades </h2>
+      <table>
+          <thead>
+            <th>ID</th>
+            <th>Apelido</th>
+            <th>Local</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th></th>
+            <th></th>
+              <th class="text-center">       
+          </thead>
+          <tbody>
+              <tr *ngFor="let unidade of unidades" >
+                <th>{{ unidade.id }}</th>
+                <th>{{ unidade.apelido}}</th>
+                <th>{{ unidade.local }}</th>
+                <th>{{ unidade.marca  }}</th>
+                <th>{{ unidade.modelo }}</th>
+                <th><button class="btn btn-success">Editar </button></th>
+                <th><button class="btn btn-danger"> Remover </button></th>
+              </tr>
+      </tbody>
+  </table>
+  <div class="adicionarUnidade">
+    <a [routerLink]="['']" href=""><button class="btn btn-primary" type="button">Adicionar unidade</button> </a>
+  </div>
+ </div>
+</div>    
+
+
+
