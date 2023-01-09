@@ -1,23 +1,23 @@
 .main {
   display: flex;
-  background-color: #fafafa;
+  background-color: #FAFAFA;
 }
 .content {
   width: 100%;
 }
-.content .title {
-  background-color: #ffffff;
+.title {
+  background-color: #FAFAFA;;
   padding: 15px;
 }
 
-.container > h2 {
+.container > h1 {
   font-size: 28px;
   font-weight: 700;
   color: #374557;
   margin-bottom: 20px;
   margin-top: 20px;
 }
-/* 
+
 form button {
   margin-top: 20px;
   width: 200px;
@@ -30,4 +30,4 @@ form button {
   font-size: 18px;
   font-weight: 500;
   border: none;
-} */
+}

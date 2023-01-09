@@ -11,6 +11,7 @@ import { MenuLateralComponent } from './core/pages/menu-lateral/menu-lateral.com
 import { CadastroUnidComponent } from './core/pages/cadastro-unid/cadastro-unid.component';
 import { ListarUnidadeComponent } from './core/pages/listar-unidade/listar-unidade.component';
 import { UnidadesService } from './core/shared/services/unidades.service';
+import { FooterComponent } from './core/pages/footer/footer.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent }
@@ -18,19 +19,21 @@ const appRoutes: Routes = [
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    LoginComponent,
-    MenuLateralComponent,
-    CadastroUnidComponent,
-    ListarUnidadeComponent,
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-    RouterModule.forRoot(appRoutes)
-  ],
-  providers: [UnidadesService],
-  bootstrap: [AppComponent]
-})
+    declarations: [
+        AppComponent,
+        LoginComponent,
+        MenuLateralComponent,
+        CadastroUnidComponent,
+        ListarUnidadeComponent,
+        FooterComponent,
+    ],
+    providers: [UnidadesService],
+    bootstrap: [AppComponent],
+    imports: [
+      BrowserModule,
+      FormsModule,
+      RouterModule.forRoot(appRoutes)
+    ],
+    
+  })
 export class AppModule { }
