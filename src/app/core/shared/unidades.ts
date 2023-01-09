@@ -1,5 +1,5 @@
-export interface IList{
-  id: 0;
+export interface IUnidade{
+  id: number;
   apelido: string;
   local: string;
   marca: string;

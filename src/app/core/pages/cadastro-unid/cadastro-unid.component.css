@@ -2,8 +2,6 @@
   display: flex;
   background-color: #fafafa;
 }
-
-
 .content {
   width: 100%;
 }
@@ -19,7 +17,7 @@
   margin-bottom: 20px;
   margin-top: 20px;
 }
-
+/* 
 form button {
   margin-top: 20px;
   width: 200px;
@@ -32,4 +30,4 @@ form button {
   font-size: 18px;
   font-weight: 500;
   border: none;
-}
+} */

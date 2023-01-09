@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IList } from 'src/app/core/shared/services/unidades';
+import { IUnidade } from 'src/app/core/shared/unidades';
 
 @Component({
   selector: 'app-cadastro-unid',
@@ -10,7 +10,7 @@ export class CadastroUnidComponent implements OnInit {
 
   cadastro:boolean = false
 
-  novaUnidade:IList = {
+  novaUnidade:IUnidade = {
     id: 0,
     apelido: "",
     local: "",
