@@ -1,0 +1,70 @@
+.main {
+  display: flex;
+  height: 90vh;
+  background-color: #FAFAFA;
+}
+
+.container.row {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* .content {
+  width: 100%;
+} */
+
+.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+  width: 100%;
+}
+
+.title {
+  background-color: #ffffff;
+  padding: 15px;
+
+}
+
+.card {
+  margin-top: 20px;
+  border-radius: 8px;
+  border: 1px solid #DFE0EB;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+app-footer {
+  position: relative;
+  bottom: -30px;
+  width: 100%;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 1080px) {
+  .content {
+    width: 100%;
+    margin-left: 50;
+    margin-top: 0;
+    padding: 10px 20px;
+    transition: 0s;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .content {
+    margin-left: 50;
+    margin-top: 0;
+    padding: 10px 20px;
+    transition: 0s;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content {
+    margin-left: 0;
+    margin-top: 0;
+    padding: 10px 20px;
+    transition: 0s;
+  }
+}
