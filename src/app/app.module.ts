@@ -12,6 +12,7 @@ import { CadastroUnidComponent } from './core/pages/cadastro-unid/cadastro-unid.
 import { ListarUnidadeComponent } from './core/pages/listar-unidade/listar-unidade.component';
 import { UnidadesService } from './core/shared/services/unidades.service';
 import { FooterComponent } from './core/pages/footer/footer.component';
+import { PainelPrincipalComponent } from './core/pages/painel-principal/painel-principal.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent }
@@ -26,6 +27,7 @@ const appRoutes: Routes = [
         CadastroUnidComponent,
         ListarUnidadeComponent,
         FooterComponent,
+        PainelPrincipalComponent,
     ],
     providers: [UnidadesService],
     bootstrap: [AppComponent],

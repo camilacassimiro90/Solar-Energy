@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+main {
+  background: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #434343;
+  font-size: 16px;
+}
+
+.title {
+  width: 207px;
+  height: 108px;
+  left: 385px;
+  top: 33px;
+
+  /* Heading/Heading 1 */
+
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 54px;
+
+  /* Color/Black */
+
+  color: #374557;
+}
+
+.cards {
+  display: flex;
+  padding: 32px;
+}
+
+.cards article.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #DFE0EB;
+  max-height: 468px;
+  margin-left: 32px;
+  color: white;
+}
+
+.cards article.card h5 {
+  margin: 16px 0;
+  color: #9FA2B4;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+}
+
+.cards article.card h6 {
+  margin: 16px 0;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+
+  /* grayscale / black */
+
+  color: #252733;
+}
+
+.cards article.card {
+  max-width: 240px;
+  margin-bottom: 16px;
+  font-family: 'Mulish';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  text-align: center;
+  letter-spacing: 1px;
+
+  /* grayscale / black */
+  color: #252733;
+}
+
+.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+  width: 100%;
+}
+
+app-footer {
+  position: relative;
+  bottom: -30px;
+  width: 100%;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 1080px) {
+  .content {
+    width: 100%;
+    margin-left: 50;
+    margin-top: 0;
+    padding: 10px 20px;
+    transition: 0s;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .cards article.card {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    margin-left: 50;
+    margin-top: 0;
+    padding: 10px 20px;
+    transition: 0s;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .cards article.card {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+
+  .title{
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .content {
+    margin-left: 0;
+    margin-top: 0;
+    padding: 10px 20px;
+    transition: 0s;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .cards article.card {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+}
