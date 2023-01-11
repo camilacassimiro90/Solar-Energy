@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { IUnidade } from 'src/app/core/shared/unidades';
+import { IUnidade } from 'src/app/core/shared/models/unidades';
 
 @Component({
   selector: 'app-cadastro-unid',
@@ -8,9 +8,9 @@ import { IUnidade } from 'src/app/core/shared/unidades';
 })
 export class CadastroUnidComponent implements OnInit {
 
-  cadastro:boolean = false
+  cadastro: boolean = false
 
-  novaUnidade:IUnidade = {
+  novaUnidade: IUnidade = {
     id: 0,
     apelido: "",
     local: "",
@@ -22,7 +22,7 @@ export class CadastroUnidComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  cadastrar(){
+  cadastrar() {
     this.cadastro = true;
   }
 }
