@@ -13,6 +13,7 @@ import { ListarUnidadeComponent } from './core/pages/listar-unidade/listar-unida
 import { UnidadesService } from './core/shared/services/unidades.service';
 import { FooterComponent } from './core/pages/footer/footer.component';
 import { PainelPrincipalComponent } from './core/pages/painel-principal/painel-principal.component';
+import { LancamentoKwComponent } from './core/pages/lancamento-kw/lancamento-kw.component';
 
 const appRoutes: Routes = [
   { path: '', component: LoginComponent }
@@ -28,6 +29,7 @@ const appRoutes: Routes = [
         ListarUnidadeComponent,
         FooterComponent,
         PainelPrincipalComponent,
+        LancamentoKwComponent,
     ],
     providers: [UnidadesService],
     bootstrap: [AppComponent],

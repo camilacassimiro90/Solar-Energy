@@ -1,0 +1,53 @@
+
+<div class="tittle">
+  <h2 class="ps-5 mt-5 mb-5"><b>Lançamento de geração mensal</b></h2>
+</div>
+
+<div class="content">
+  <form
+    action=""
+    class="container"
+    #formGeracao="ngForm"
+    (ngSubmit)="registrar(); formGeracao.reset()"
+  >
+    <label for="nomeUnidade"><b>Unidade geradora:</b></label>
+    <select
+      name="nomeUnidade"
+      class="form-select"
+      id="nomeUnidade"
+      [(ngModel)]="geracao.nomeUnidade"
+      required
+    >
+      <option *ngFor="let item of unidade" value="{{ item.apelido }}">
+        {{ item.apelido }}
+      </option>
+    </select>
+
+    <label for="ano"><b>Mês/ano</b></label>
+    <input
+    type="month"
+    name="ano"
+    id="ano"
+    class="input-group-text"
+    [(ngModel)]="geracao.ano"
+    required
+  />
+    <label for="kwGerado"><b>Total kw gerado</b></label>
+    <input
+      type="number"
+      min="0"
+      name="kwGerado"
+      id="kwGerado"
+      class="input-group-text"
+      [(ngModel)]="geracao.kwGerado"
+      required
+    />
+    <button
+      [disabled]="!formGeracao.form.valid"
+      type="submit"
+      class="btn btn-primary p-3 ps-4"
+    >
+      Cadastrar
+    </button>
+  </form>
+</div>
