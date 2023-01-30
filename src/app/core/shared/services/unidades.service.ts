@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { IUnidade } from '../unidades';
+import { IUnidade } from '../models/unidades';
 
 const LS_CHAVE: string = "unidades"
 @Injectable({
@@ -11,30 +11,30 @@ export class UnidadesService {
     const unidades = localStorage[LS_CHAVE];
     return unidades ? JSON.parse(unidades) : []
   }
-  inserir (unidade: IUnidade): void {
+  inserir(unidade: IUnidade): void {
     const unidades = this.listarTodos();
     unidade.id = new Date().getTime();
     unidades.push(unidade);
     localStorage[LS_CHAVE] = JSON.stringify(unidades);
   }
-  buscarPorId(id : number): IUnidade | undefined {
+  buscarPorId(id: number): IUnidade | undefined {
     const undiades: IUnidade[] = this.listarTodos();
-    return undiades.find (unidade => unidade.id)
+    return undiades.find(unidade => unidade.id)
   }
-  atualizar (unidade: IUnidade): void {
+  atualizar(unidade: IUnidade): void {
     const unidades: IUnidade[] = this.listarTodos();
-    unidades.forEach (
+    unidades.forEach(
       (obj, index, objs) => {
         if (unidade.id == obj.id) {
           objs[index] = unidade;
-        } 
+        }
       }
     );
     localStorage[LS_CHAVE] = JSON.stringify(unidades);
   }
-  remover (id: number): void {
-    let unidades: IUnidade []= this.listarTodos();
-    unidades = unidades.filter(unidade=> unidade.id !== id);
+  remover(id: number): void {
+    let unidades: IUnidade[] = this.listarTodos();
+    unidades = unidades.filter(unidade => unidade.id !== id);
     localStorage[LS_CHAVE] = JSON.stringify(unidades);
   }
 }
