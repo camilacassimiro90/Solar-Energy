@@ -16,28 +16,28 @@ import { PainelPrincipalComponent } from './core/pages/painel-principal/painel-p
 import { LancamentoKwComponent } from './core/pages/lancamento-kw/lancamento-kw.component';
 
 const appRoutes: Routes = [
-  { path: '', component: LoginComponent }
+  { path: '', component: LoginComponent },
+  { path: 'painel-principal', component: PainelPrincipalComponent }
 ]
 
-
 @NgModule({
-    declarations: [
-        AppComponent,
-        LoginComponent,
-        MenuLateralComponent,
-        CadastroUnidComponent,
-        ListarUnidadeComponent,
-        FooterComponent,
-        PainelPrincipalComponent,
-        LancamentoKwComponent,
-    ],
-    providers: [UnidadesService],
-    bootstrap: [AppComponent],
-    imports: [
-      BrowserModule,
-      FormsModule,
-      RouterModule.forRoot(appRoutes)
-    ],
-    
-  })
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    MenuLateralComponent,
+    CadastroUnidComponent,
+    ListarUnidadeComponent,
+    FooterComponent,
+    PainelPrincipalComponent,
+    LancamentoKwComponent,
+  ],
+  providers: [UnidadesService],
+  bootstrap: [AppComponent],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
+  ],
+
+})
 export class AppModule { }

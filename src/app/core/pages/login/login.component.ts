@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PatternValidator } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +9,22 @@ import { PatternValidator } from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  email: string = "";
+  password: string = "";
+
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
 
-  logar(dados: { email: string, password: string }) {
-    console.log('Post efetuado!', dados);
+  // logar(dados: { email: string, password: string }) {
+  //   console.log('Post efetuado!', dados);
 
+  // }
+
+  logar() {
+    this.router.navigate(['/painel-principal']);
   }
 }
