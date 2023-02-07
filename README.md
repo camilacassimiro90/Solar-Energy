@@ -10,6 +10,7 @@ Ao clicar no botão de Entrar deve passar pela validação.</p>
 
 <p>:white_check_mark: Um menu lateral, contendo as opções Dashboard, Unidade Consumidora e Cadastro de energia gerada. O menu deve ser configurado usando Angular Router. Seguir layout conforme o mockup disponibilizado.</p>
 
+<p>:white_check_mark: Ao clicar no botão de Entrar e passar pela validação, redirecionar para tela de Dashboard. Seguir layout conforme o mockup disponibilizado.</p>
 
 
 <h3>Seguir layout conforme o mockup disponibilizado: :arrow_down: https://www.figma.com/file/Bh4fJZohrlLMoKQU6lbe9p/Projeto-DevInHouse---NDD?node-id=0%3A1&t=tyunHBjZHVmJkEYv-0</h3>
